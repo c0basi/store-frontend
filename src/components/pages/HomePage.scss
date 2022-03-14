@@ -1,0 +1,32 @@
+.homepage {
+	max-width: 1300px;
+	margin: 1.5rem auto;
+	&__title {
+		font-size: 2rem;
+		color: #171717;
+		margin-bottom: 1rem;
+		margin-left: 8px;
+	}
+	&__products {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 1235px) {
+	.homepage__products {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.homepage__products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.homepage__products {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
